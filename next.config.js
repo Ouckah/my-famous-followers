@@ -6,6 +6,10 @@ const nextConfig = {
         source: '/tests',
         destination: 'http://localhost:5000/tests'
       },
+      {
+        source: '/api/:slug*',
+        destination: 'http://localhost:5000/api/:slug*'
+      },
     ]
   },
   reactStrictMode: true,
